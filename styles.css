@@ -1,0 +1,33 @@
+ 
+/* ---------- Part 1: Transitions & Animations ---------- */
+
+/* Button hover effect */
+.hover-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.hover-btn:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+/* Continuous animation using keyframes */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: crimson;
+  margin-top: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
